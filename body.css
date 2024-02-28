@@ -1,0 +1,137 @@
+/* CSS made by Peter Meindertsma for www.triviaplaza.com in 2020 */
+/* Breakpoint #1: mobile first default settings */
+html {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+body {
+  font-family: nunito, sans-serif;
+  font-size: 20px;
+  color: #080808;
+  height: 80%;
+  margin: 0px;
+  text-align: center;
+  background-color: #debd00;
+  background-repeat: no-repeat;
+}
+
+#qscreen * {
+  transition: 0.2s;
+  transition-timing-function: ease;
+}
+
+#innerquiz .bolink {
+  font-size: 0.8em;
+  margin-top: 50px;
+}
+
+/* quizpages */
+
+#questions {
+  max-width: 790px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+#questions div a {
+  text-decoration: none;
+  background-color: #22155A;
+  height: 60px;
+  width: 370px;
+  vertical-align: middle;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  display: table-cell;
+  font-size: 1.4em;
+  overflow: hidden;
+  line-height: 1em;
+  padding: 0px 5px;
+  box-shadow: 0px 5px 5px #000;
+  background-image: linear-gradient(#4F428B,#22155A 5%);
+}
+
+#questions div {
+  max-width: 370px;
+  width: 100%;
+  display: inline-block;
+  margin: 0px 5px 4px 0px;
+}
+
+#qscreen #question__title img {
+  max-height: 225px;
+  max-width: 340px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  filter: drop-shadow(0px 0px 5px #cdcbd6);
+}
+
+#qscreen #scoreboard {
+  float: left;
+  width: 50px;
+  min-height: 45px;
+  font-size: 1.2em;
+  line-height: 0.9em;
+  padding: 0px;
+  margin-right: 5px;
+  text-align: right;
+}
+#qscreen #points {
+  float: right;
+  min-width: 40px;
+  max-height: 49px;
+  text-align: center;
+  font-size: 1em;
+  margin-left: 3px;
+  overflow: visible;
+  z-index: 10;
+}
+
+#qscreen #points #score {
+  height: 1.2em;
+  width: 1.2em;
+  font-size: 1.2em;
+  padding: 2px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.25em;
+  background-color: #22155A;
+  border-radius: 50%;
+  color: #fff;
+}
+#
+#questions.anssmall div a {
+  font-size: 1.2em;
+  line-height: 0.8em;
+}
+
+#questions.ansnormal div a {
+  font-size: 1.5em;
+  line-height: 0.8em;
+}
+
+#questions div a.qcorrect {
+  background-color: #6BD425;
+  background-image: linear-gradient(#6BD425,#49B203 5%);
+  cursor: default;
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.5);
+  text-shadow: 0px 0px 2px #48BF84;
+}
+
+#questions div a.qincorrect {
+  background-color: #DB222A;
+  background-image: linear-gradient(#FD444C,#DB222A 5%);
+  cursor: default;
+  box-shadow: 0px 5px 5px #000;
+  text-shadow: 0px 0px 2px #B90008;
+}
+
+#logo {
+  display: block;
+  max-width: 100%; /* Makes sure the logo is responsive */
+  max-height: 150px; /* Adjust this value to your preference */
+  margin: 20px auto; /* Centers the logo and adds some space around it */
+}

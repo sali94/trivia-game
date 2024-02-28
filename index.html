@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Who Wants to Be an Intern</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="body.css" />
+    <script src="questions.js"></script>
+    <script src="game.js"></script>
+  </head>
+  <body>
+    <div id="main">
+      <button class="start-button">Start Game</button>
+      <div id="content" class="fadein margins">
+        <img id="logo" src="./GSJ.png" />
+        <div id="qscreen">
+          <div id="scoreboard"></div>
+          <div id="points">
+            <div id="score">0</div>
+            <div id="pts">point</div>
+          </div>
+          <div id="game-over-message" style="display: none;"></div>
+          <div id="question__title"></div>
+        </div>
+        <div id="questions"></div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <img id="footer" src="./yu.png" />
+
+  </footer>
+  <script>
+    const game = new TriviaGame(questions);
+  </script>
+</html>
